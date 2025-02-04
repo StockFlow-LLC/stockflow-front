@@ -24,11 +24,11 @@ export default function BlogCard({blogDetails}: { blogDetails: Blog }) {
                         <div className="flex gap-5">
                             <div className="flex gap-1 items-center">
                                 <MdAccessTime className="text-main"/>
-                                10 min
+                                {blogDetails.average_read_time}
                             </div>
                             <div className="flex gap-1 items-center">
                                 <IoEyeOutline className="text-main"/>
-                                1040 Views
+                                {blogDetails.views} Views
                             </div>
                         </div>
                         <div className="flex gap-2">

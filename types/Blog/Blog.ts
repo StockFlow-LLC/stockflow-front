@@ -5,6 +5,8 @@ export interface Blog {
     documentId: string;
     topic: string;
     title: string;
+    average_read_time: string;
+    views: number;
     subtitle: string;
     likes: string;
     content: any[];
