@@ -1,4 +1,7 @@
 /* Buttons */
+html {
+  scroll-behavior: smooth;
+}
 .btn,
 .btn-sm {
   @apply inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium transition-all;

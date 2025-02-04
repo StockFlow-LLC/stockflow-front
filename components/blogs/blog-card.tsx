@@ -2,17 +2,10 @@ import {Blog} from "@/types/Blog/Blog";
 import Image from "next/image";
 import {MdAccessTime} from "react-icons/md";
 import {IoEyeOutline} from "react-icons/io5";
+import formatDate from "@/utils/data-formater";
 import Link from "next/link";
 
 export default function BlogCard({blogDetails}: { blogDetails: Blog }) {
-    const formatDate = (dateString : string) => {
-        return new Intl.DateTimeFormat('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-        }).format(new Date(dateString))
-    }
-
     return (
         <li className="">
             <Link href={`/blogs/${blogDetails.documentId}`} className="flex flex-col py-2 gap-2 mt-6 xl:flex-row-reverse xl:gap-8">
