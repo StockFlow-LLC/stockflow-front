@@ -73,11 +73,11 @@ export default function Features() {
                 />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Project Milestones
+              AI-Powered Analytics
               </h3>
               <p className="text-white/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+              Our AI models scan for unusual patterns, correlations, and market-moving trends.
+              Get automated alerts when significant transactions occur.
               </p>
             </article>
             <article>
@@ -91,11 +91,11 @@ export default function Features() {
                 <path d="M19 6H0v2h17v8H7v-6H5v8h19v-2h-5V6Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Team Views
+              Off-Exchange & Dark Pool Activity
               </h3>
               <p className="text-white/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+              Detect hidden trades executed in dark pools and
+              analyze block trades by institutions before the market reacts.
               </p>
             </article>
             <article>
@@ -112,11 +112,11 @@ export default function Features() {
                 />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Advanced Search
+              Insider & Political Trading
               </h3>
               <p className="text-white/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+              Analyze insider buying and selling activity by corporate executives and politicians.
+              Identify patterns in political trading that could signal upcoming regulation changes.
               </p>
             </article>
             <article>

@@ -10,15 +10,28 @@ const Form = () => {
       <form method="post" action="#">
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-300" htmlFor="name">Name</label>
-          <input className="mt-1 p-2 w-full bg-gray-800 border border-gray-700 rounded-md text-white" type="text" id="name" />
+          <input 
+            className="mt-1 p-2 w-full bg-gray-800 border border-gray-700 rounded-md text-white focus:border-2 focus:border-green-500 focus:outline-none" 
+            type="text" 
+            id="name" 
+          />
         </div>
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-300" htmlFor="email">Email Address</label>
-          <input className="mt-1 p-2 w-full bg-gray-800 border border-gray-700 rounded-md text-white" type="email" id="email" />
+          <input 
+            className="mt-1 p-2 w-full bg-gray-800 border border-gray-700 rounded-md text-white focus:border-2 focus:border-green-500 focus:outline-none" 
+            type="email" 
+            id="email" 
+          />
         </div>
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-300" htmlFor="bio">Message</label>
-          <textarea className="mt-1 p-2 w-full bg-gray-800 border border-gray-700 rounded-md text-white" rows={3} id="bio" />
+          <textarea 
+            className="mt-1 p-2 w-full bg-gray-800 border border-gray-700 rounded-md text-white focus:border-2 focus:border-green-500 focus:outline-none" 
+            rows={3} 
+            id="bio"
+            placeholder="Provide suggestions or feature requests" 
+          />
         </div>
         <div className="flex justify-end">
           <button className="bg-gradient-to-r from-green-700 to-green-500 text-white px-4 py-2 font-bold rounded-md hover:opacity-80" type="submit">
