@@ -2,11 +2,26 @@
 import { useRouter, useSearchParams } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { updateSearchParams } from '@/utils/url-helpers'
+import AOS from "aos";
+import "aos/dist/aos.css"
+import Image from "next/image";
+import BlurredShapeGray from "@/public/images/blurred-shape-gray.svg";
 
 const BlogHeader = () => {
     const router = useRouter()
     const searchParams = useSearchParams()
     const [searchTerm, setSearchTerm] = useState(searchParams.get('search') ?? '')
+
+    useEffect(() => {
+        AOS.init({
+            once: true,
+            disable: "phone",
+            duration: 600,
+            easing: "ease-out-sine",
+        })
+        // Call refresh to handle dynamic content
+        AOS.refresh()
+    }, [])
 
     useEffect(() => {
         const delayDebounceFn = setTimeout(() => {
@@ -22,7 +37,19 @@ const BlogHeader = () => {
     }, [searchTerm, searchParams, router])
 
     return (
-        <div className="text-center mt-3 items-center flex flex-col justify-center">
+        <div data-aos="fade-up" data-aos-delay={200} className="relative text-center mt-3 items-center flex flex-col justify-center">
+            <div
+                className="pointer-events-none absolute left-1/2 top-0 -z-10 -mt-20 translate-x-2/8"
+                aria-hidden="true"
+            >
+                <Image
+                    className="max-w-none"
+                    src={BlurredShapeGray}
+                    width={500}
+                    height={360}
+                    alt="Blurred shape"
+                />
+            </div>
             <h1 className="text-5xl font-bold inline-block transition-colors bg-gradient-to-r from-main/90 via-main/70 to-main/50 bg-clip-text text-transparent">
                 Articles
             </h1>

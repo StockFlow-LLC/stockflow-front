@@ -15,7 +15,7 @@ export default function HeroHome() {
             >
               Democratizing Wall Street One Dataset at a Time
             </h1>
-            <div className="mx-auto max-w-3xl"> 
+            <div className="mx-auto max-w-3xl">
               <p
                 className="mb-8 text-xl text-white/65"
                 data-aos="fade-up"

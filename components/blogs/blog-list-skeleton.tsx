@@ -1,4 +1,4 @@
-// components/blogs/blog-list-skeleton.tsx
+// components/articles/blog-list-skeleton.tsx
 import { SkeletonProps } from "@/types/blog-content";
 
 export default function BlogListSkeleton({ count = 3 }: SkeletonProps) {

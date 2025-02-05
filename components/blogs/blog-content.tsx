@@ -1,4 +1,4 @@
-// components/blogs/blog-content.tsx
+// components/articles/blog-content.tsx
 import { Suspense } from 'react';
 import BlogFilter from "./blog-filter";
 import BlogListSkeleton from "./blog-list-skeleton";

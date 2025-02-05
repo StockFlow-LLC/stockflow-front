@@ -1,4 +1,4 @@
-// components/blogs/aside-filter.tsx
+// components/articles/aside-filter.tsx
 'use client'
 import {useRouter, useSearchParams} from 'next/navigation'
 import {Topic} from "@/types/Blog/topic"

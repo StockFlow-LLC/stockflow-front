@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function BlogCard({blogDetails}: { blogDetails: Blog }) {
     return (
         <li className="">
-            <Link href={`/blogs/${blogDetails.documentId}`} className="flex flex-col py-2 gap-2 mt-6 xl:flex-row-reverse xl:gap-8">
+            <Link href={`/articles/${blogDetails.documentId}`} className="flex flex-col py-2 gap-2 mt-6 xl:flex-row-reverse xl:gap-8">
                 <figure className="w-full xl:basis-[30%] xl:py-4">
                     {blogDetails?.thumbnail?.url &&
                         <Image src={`${process.env.API_URL}${blogDetails.thumbnail.url}`} width={100} height={100}
