@@ -34,15 +34,15 @@ export default function Features() {
         <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,theme(colors.slate.400/.25),transparent)1] md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-4 text-center md:pb-12">
-            <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-gradient-to-r before:from-transparent before:to-indigo-200/50 after:h-px after:w-8 after:bg-gradient-to-l after:from-transparent after:to-indigo-200/50">
-              <span className="inline-flex bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
+            <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-gradient-to-r before:from-transparent before:to-white/50 after:h-px after:w-8 after:bg-gradient-to-l after:from-transparent after:to-white/50">
+              <span className="inline-flex bg-gradient-to-r from-green-500 to-white bg-clip-text text-transparent">
                 Advanced Controls
               </span>
             </div>
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.indigo.200),theme(colors.gray.50),theme(colors.indigo.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.green.200),theme(colors.gray.50),theme(colors.green.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
               Built for modern product teams
             </h2>
-            <p className="text-lg text-indigo-200/65">
+            <p className="text-lg text-white/65">
               Open AI reads and understands your files, and with nothing more
               than a single line of feedback, so you can go further than the
               speed of thought.
@@ -61,7 +61,7 @@ export default function Features() {
           <div className="mx-auto grid max-w-sm gap-12 sm:max-w-none sm:grid-cols-2 md:gap-x-14 md:gap-y-16 lg:grid-cols-3">
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-green-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -75,14 +75,14 @@ export default function Features() {
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Project Milestones
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-white/65">
                 Track progress across custom flows for your team. Find the right
                 balance for the user, privacy and security.
               </p>
             </article>
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-green-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -93,14 +93,14 @@ export default function Features() {
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Team Views
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-white/65">
                 Track progress across custom flows for your team. Find the right
                 balance for the user, privacy and security.
               </p>
             </article>
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-green-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -114,14 +114,14 @@ export default function Features() {
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Advanced Search
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-white/65">
                 Track progress across custom flows for your team. Find the right
                 balance for the user, privacy and security.
               </p>
             </article>
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-green-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -140,14 +140,14 @@ export default function Features() {
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Strategic Initiatives
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-white/65">
                 Track progress across custom flows for your team. Find the right
                 balance for the user, privacy and security.
               </p>
             </article>
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-green-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -161,14 +161,14 @@ export default function Features() {
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Flexible Workflows
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-white/65">
                 Track progress across custom flows for your team. Find the right
                 balance for the user, privacy and security.
               </p>
             </article>
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-green-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -182,7 +182,7 @@ export default function Features() {
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Unified Timeline
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-white/65">
                 Track progress across custom flows for your team. Find the right
                 balance for the user, privacy and security.
               </p>
