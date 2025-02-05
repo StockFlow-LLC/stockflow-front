@@ -1,5 +1,34 @@
+import React from 'react';
 import Image from "next/image";
 import BlurredShape from "@/public/images/blurred-shape.svg";
+
+const Form = () => {
+  return (
+    <div className="max-w-md mx-auto relative overflow-hidden z-10 bg-gray-900 p-6 rounded-lg shadow-lg 
+      before:w-20 before:h-20 before:absolute before:bg-green-600/25 before:rounded-full before:-z-10 before:blur-2xl 
+      after:w-28 after:h-28 after:absolute after:bg-green-400/25 after:rounded-full after:-z-10 after:blur-lg after:top-20 after:-right-10">
+      <form method="post" action="#">
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-300" htmlFor="name">Name</label>
+          <input className="mt-1 p-2 w-full bg-gray-800 border border-gray-700 rounded-md text-white" type="text" id="name" />
+        </div>
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-300" htmlFor="email">Email Address</label>
+          <input className="mt-1 p-2 w-full bg-gray-800 border border-gray-700 rounded-md text-white" type="email" id="email" />
+        </div>
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-300" htmlFor="bio">Message</label>
+          <textarea className="mt-1 p-2 w-full bg-gray-800 border border-gray-700 rounded-md text-white" rows={3} id="bio" />
+        </div>
+        <div className="flex justify-end">
+          <button className="bg-gradient-to-r from-green-700 to-green-500 text-white px-4 py-2 font-bold rounded-md hover:opacity-80" type="submit">
+            Join Waitlist
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+};
 
 export default function Cta() {
   return (
@@ -16,38 +45,19 @@ export default function Cta() {
           alt="Blurred shape"
         />
       </div>
-      <div className="max-w6xl mx-auto px-4 sm:px-6">
-        <div className="bg-gradient-to-r from-transparent via-gray-800/50 py-12 md:py-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="bg-gradient-to-r from-transparent via-gray-900/50 py-5 md:py-20">
           <div className="mx-auto max-w-3xl text-center">
             <h2
-              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.green.200),theme(colors.gray.50),theme(colors.green.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-8 font-nacelle text-3xl font-semibold text-transparent md:text-4xl"
+              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.green.300),theme(colors.gray.50),theme(colors.green.400),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-8 font-nacelle text-3xl font-semibold text-transparent md:text-4xl"
               data-aos="fade-up"
             >
-              Join the content-first platform
+              Join the Waitlist
             </h2>
-            <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
-              <div data-aos="fade-up" data-aos-delay={400}>
-                <a
-                  className="btn group mb-4 w-full bg-gradient-to-t from-green-600 to-green-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                  href="#0"
-                >
-                  <span className="relative inline-flex items-center">
-                    Start Building
-                    <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
-                      -&gt;
-                    </span>
-                  </span>
-                </a>
-              </div>
-              <div data-aos="fade-up" data-aos-delay={600}>
-                <a
-                  className="btn relative w-full bg-gradient-to-b from-gray-800 to-gray-800/60 bg-[length:100%_100%] bg-[bottom] text-gray-300 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,theme(colors.gray.800),theme(colors.gray.700),theme(colors.gray.800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-[length:100%_150%] sm:ml-4 sm:w-auto"
-                  href="#0"
-                >
-                  Schedule Demo
-                </a>
-              </div>
-            </div>
+          </div>
+          {/* Integrated Form */}
+          <div className="mt-12">
+            <Form />
           </div>
         </div>
       </div>
