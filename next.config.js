@@ -12,7 +12,6 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'cms.stockflow.llc',
-                port: '1337',
                 pathname: '/uploads/**',
             }
         ],
