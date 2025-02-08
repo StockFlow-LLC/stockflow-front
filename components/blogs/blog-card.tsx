@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function BlogCard({blogDetails}: { blogDetails: Blog }) {
     return (
-        <li className="">
+        <li data-aos="fade-up" data-aos-delay="100">
             <Link href={`/articles/${blogDetails.documentId}`} className="flex flex-col py-2 gap-2 mt-6 xl:flex-row-reverse xl:gap-8">
                 <figure className="w-full xl:basis-[30%] xl:py-4">
                     {blogDetails?.thumbnail?.url &&
@@ -38,7 +38,6 @@ export default function BlogCard({blogDetails}: { blogDetails: Blog }) {
                                 )
                             })}
                         </div>
-
                     </div>
                 </div>
             </Link>

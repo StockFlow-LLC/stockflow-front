@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "StockFlow",
-  description: "StockFlow Home",
+  title: "StockFlow - Alternative Financial Data Analytics",
+  description: "StockFlow aims to democratize access to valuable financial data by providing alternative data sources to retail traders.",
 };
 
 import PageIllustration from "@/components/page-illustration";
@@ -17,7 +17,6 @@ export default function Home() {
       <Hero />
       <Workflows />
       <Features />
-      <Testimonials />
       <Cta />
     </>
   );

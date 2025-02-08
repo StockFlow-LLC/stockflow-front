@@ -40,22 +40,7 @@ export default function Footer() {
                   Integrations
                 </a>
               </li>
-              <li>
-                <a
-                  className="text-white/65 transition hover:text-green-500"
-                  href="#0"
-                >
-                  Pricing &amp; Plans
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-white/65 transition hover:text-green-500"
-                  href="#0"
-                >
-                  Changelog
-                </a>
-              </li>
+             
               <li>
                 <a
                   className="text-white/65 transition hover:text-green-500"
@@ -205,7 +190,7 @@ export default function Footer() {
             </div>
             <div className="text-sm">
               <p className="mb-3 text-white/65">
-                © Cruip.com
+                © StockFlow LLC
                 <span className="text-gray-700"> · </span>
                 <a
                   className="text-white/65 transition hover:text-green-500"

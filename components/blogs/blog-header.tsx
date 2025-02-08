@@ -50,7 +50,11 @@ const BlogHeader = () => {
                     alt="Blurred shape"
                 />
             </div>
-            <h1 className="text-5xl font-bold inline-block transition-colors bg-gradient-to-r from-main/90 via-main/70 to-main/50 bg-clip-text text-transparent">
+            <h1             
+            className=
+            "bg-[linear-gradient(to_right,theme(colors.white),theme(colors.green.600),theme(colors.gray.300),theme(colors.green.600),theme(colors.gray.300))] bg-[length:400%_auto] bg-clip-text font-nacelle text-4xl font-semibold text-transparent md:text-5xl"
+            //"text-5xl font-bold inline-block transition-colors bg-gradient-to-r from-main/90 via-main/70 to-main/50 bg-clip-text text-transparent"
+            >
                 Articles
             </h1>
             <p className="text-sm mt-2 transition-colors bg-gradient-to-r from-neutral-300/[35%] via-neutral-300/90 to-neutral-300/[35%] bg-clip-text text-transparent">
