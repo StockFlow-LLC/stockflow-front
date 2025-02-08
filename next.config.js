@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['localhost'],
+        domains: ['localhost','cms.stockflow.llc'],
         remotePatterns: [
             {
                 protocol: 'http',
@@ -9,6 +9,12 @@ const nextConfig = {
                 port: '1337',
                 pathname: '/uploads/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'cms.stockflow.llc',
+                port: '1337',
+                pathname: '/uploads/**',
+            }
         ],
     },
 };

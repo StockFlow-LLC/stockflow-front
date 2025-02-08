@@ -9,6 +9,7 @@ interface FetchParams {
 }
 
 export async function getBlogsAndTopics({topic, sort, search}: FetchParams) {
+    console.log(`${process.env.API_URL}`)
     let blogsUrl = `${process.env.API_URL}/api/blogs?populate[topics][fields][0]=title&populate[topics][fields][1]=id&populate=thumbnail`;
     let topicUrl = `${process.env.API_URL}/api/topics?pagination[page]=1&pagination[pageSize]=100`
     if (search) {
