@@ -10,8 +10,8 @@ export default async function Blogs({searchParams}: {
     const searchTitle = params.search as string | undefined;
     return (
         <div className="flex flex-col blogContainer">
-            <BlogHeader/>
-            <BlogContent topicId={topicId} sortBy={sortBy} searchTitle={searchTitle}/>
+            {/*<BlogHeader/>*/}
+            {/*<BlogContent topicId={topicId} sortBy={sortBy} searchTitle={searchTitle}/>*/}
         </div>
     );
 }
