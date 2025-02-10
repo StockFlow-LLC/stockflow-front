@@ -1,7 +1,6 @@
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'StockFlow | Articles',
+export const metadata = {
+    title: 'StockFlow | Articles',
+    description: 'Explore our latest articles & research. Stay up to date with the market',
 };
 
 export default function BlogLayout({children}: {
