@@ -1,7 +1,7 @@
 import Image from "next/image";
-import WorflowImg01 from "@/public/images/workflow-01.png";
-import WorflowImg02 from "@/public/images/workflow-02.png";
-import WorflowImg03 from "@/public/images/workflow-03.png";
+import DataOverview from "@/public/images/DataOverview.svg";
+import Flow from "@/public/images/Flow.svg";
+import Screener from "@/public/images/Screener.svg";
 import Spotlight from "@/components/spotlight";
 
 export default function Workflows() {
@@ -49,13 +49,15 @@ export default function Workflows() {
                   </svg>
                 </div>
                 {/* Image */}
-                <Image
-                  className="inline-flex"
-                  src={WorflowImg01}
-                  width={350}
-                  height={288}
-                  alt="Workflow 01"
-                />
+                <div className="flex justify-center">
+                  <Image
+                    className="inline-flex"
+                    src={DataOverview}
+                    width={250}
+                    height={288}
+                    alt="Alternative Datasets"
+                  />
+                </div>
                 {/* Content */}
                 <div className="p-6">
                   <div className="mb-3">
@@ -95,13 +97,15 @@ export default function Workflows() {
                   </svg>
                 </div>
                 {/* Image */}
-                <Image
-                  className="inline-flex"
-                  src={WorflowImg02}
-                  width={350}
-                  height={288}
-                  alt="Workflow 02"
-                />
+                <div className="flex justify-center">
+                  <Image
+                    className="inline-flex"
+                    src={Screener}
+                    width={250}
+                    height={288}
+                    alt="Stock Screener"
+                  />
+                </div>
                 {/* Content */}
                 <div className="p-6">
                   <div className="mb-3">
@@ -141,13 +145,15 @@ export default function Workflows() {
                   </svg>
                 </div>
                 {/* Image */}
-                <Image
-                  className="inline-flex"
-                  src={WorflowImg03}
-                  width={350}
-                  height={288}
-                  alt="Workflow 03"
-                />
+                <div className="flex justify-center">
+                  <Image
+                    className="inline-flex"
+                    src={Flow}
+                    width={350}
+                    height={288}
+                    alt="Option Flow"
+                  />
+                </div>
                 {/* Content */}
                 <div className="p-6">
                   <div className="mb-3">

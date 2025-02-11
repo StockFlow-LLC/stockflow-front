@@ -21,9 +21,9 @@ export default async function BlogContent({ topicId, sortBy, searchTitle }: Blog
                 <AsideFilter topics={topics.data} currentTopic={topicId} />
             </div>
             <Suspense fallback={<BlogListSkeleton />}>
-                <div className="flex flex-col basis-[75%] border-gray-500/30 border-t px-8 mt-4">
-                    <ul className="flex-1 flex flex-col gap-16">
-                        {blogs?.data?.map((blog, index) => (
+                <div className="flex flex-col basis-[75%] border-gray-500/30 border-t px-8 mt-4 max-h-screen overflow-y-auto">
+                    <ul className="flex-1 flex flex-col gap-16 pb-8">
+                        {blogs?.data?.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()).map((blog, index) => (
                             <div 
                                 key={blog.id} 
                                 className="animate-fade-up"
