@@ -14,7 +14,7 @@ export interface Blog {
     thumbnail?: {
         url?: string;
         formats?: {
-            large?: {
+            medium?: {
                 url: string;
             };
         };

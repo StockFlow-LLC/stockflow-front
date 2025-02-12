@@ -61,17 +61,18 @@ const Blog = async ({params,}: { params: Promise<{ id: string }> }) => {
         <div className="pb-[200px]" data-aos="fade-up">
             <div className="relative">
                 <figure className="w-full">
-                {blog.thumbnail?.formats?.large?.url ? (
-                       <Image
-                       src={blog.thumbnail?.formats?.large?.url.startsWith('http')
-                         ? blog.thumbnail.formats.large.url
-                         : `${process.env.NEXT_PUBLIC_API_URL || ''}${blog.thumbnail.formats.large.url}`}
-                       alt={blog.title}
-                       width={500}
-                       height={300}
-                       className="w-full h-[250px] object-cover"
-                       priority
-                     />
+                    {blog.thumbnail?.formats?.medium?.url ? (
+                        <Image
+                            src={blog.thumbnail.formats.medium.url.startsWith('http')
+                                ? blog.thumbnail.formats.medium.url
+                                : `${process.env.NEXT_PUBLIC_API_URL}${blog.thumbnail.formats.medium.url}`}
+                            alt={blog.title}
+                            width={800}
+                            height={600}
+                            className="w-full h-[250px] object-cover"
+                            priority
+                            quality={85}
+                        />
                     ) : (
                         <div className="w-full h-[250px] bg-gray-800 flex items-center justify-center">
                             <span className="text-gray-400 text-2xl">{blog.title.charAt(0)}</span>

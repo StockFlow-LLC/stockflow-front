@@ -13,17 +13,21 @@ const BlogImage = ({ thumbnail, title }: { thumbnail: any; title: string }) => {
     );
   }
 
+  // Get the medium format or fallback to original
+  const imageUrl = thumbnail.formats?.medium?.url || thumbnail.url;
+
   return (
     <Image 
-  src={thumbnail.url.startsWith('http') 
-    ? thumbnail.url 
-    : `${process.env.NEXT_PUBLIC_API_URL || ''}${thumbnail.url}`}
-  width={100}
-  height={100}
-  alt={title}
-  className="w-full h-[240px] rounded-md xl:h-[150px] object-cover"
-  onError={() => setImgError(true)}
-/>
+      src={imageUrl.startsWith('http') 
+        ? imageUrl
+        : `${process.env.NEXT_PUBLIC_API_URL}${imageUrl}`}
+      width={800}
+      height={600}
+      alt={title}
+      className="w-full h-[240px] rounded-md xl:h-[150px] object-cover"
+      onError={() => setImgError(true)}
+      quality={85}
+    />
   );
 };
 
