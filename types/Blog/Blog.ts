@@ -11,7 +11,14 @@ export interface Blog {
     likes: string;
     content: any[];
     topics: Topic[];
-    thumbnail : Thumbnail
+    thumbnail?: {
+        url?: string;
+        formats?: {
+            large?: {
+                url: string;
+            };
+        };
+    };
     createdAt: string;
     updatedAt: string;
     publishedAt: string;
